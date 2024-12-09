@@ -8,11 +8,6 @@ class AdviceUseCases {
   final adviceRepo = AdviceRepoImpl();
 
   Future<Either<Failure, AdviceEntity>> getAdvice() async {
-
     return adviceRepo.getAdviceFromDatasource();
-
-    await Future.delayed(const Duration(seconds: 3), () {});
-    //return right (const AdviceEntity(advice: 'Advice to test', id: 1));
-    return left (CacheFailure());
   }
 }

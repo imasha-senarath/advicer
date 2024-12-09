@@ -3,15 +3,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class CustomButton extends StatelessWidget {
-  const CustomButton({super.key});
+  final VoidCallback onTap;
+  final String btnName;
+
+  const CustomButton({super.key, required this.onTap, required this.btnName});
 
   @override
   Widget build(BuildContext context) {
     final themeData = Theme.of(context);
     return InkResponse(
-      onTap: () {
-        BlocProvider.of<AdviceBloc>(context).add(AdviceRequestedEvent());
-      },
+      onTap: onTap,
       child: Material(
         elevation: 5,
         borderRadius: BorderRadius.circular(15),
@@ -22,7 +23,7 @@ class CustomButton extends StatelessWidget {
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 15),
             child: Text(
-              'Get Advice',
+              btnName,
               style: themeData.textTheme.headlineSmall,
             ),
           ),

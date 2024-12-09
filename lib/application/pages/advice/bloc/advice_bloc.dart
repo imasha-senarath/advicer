@@ -18,6 +18,7 @@ class AdviceBloc extends Bloc<AdviceEvent, AdviceState> {
     final AdviceUseCases adviceUseCases = AdviceUseCases();
 
     String mapFailureToMessage(Failure failure){
+      print(failure.toString());
       switch (failure.runtimeType) {
         case ServerFailure _:
         return serverFailureMessage;

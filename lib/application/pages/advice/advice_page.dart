@@ -67,21 +67,20 @@ class AdvicePage extends StatelessWidget {
                     return const SizedBox();
                   },
                 ),
-                /*AdviceField(advice: 'Sample advice'),*/
-                /*CircularProgressIndicator(
-                  color: themeData.colorScheme.secondary,
-                )*/
-                /*Text(
-                  'Your Advice is waiting for you!',
-                    style: themeData.textTheme.headlineSmall,
-                ),*/
               ),
             ),
-            const SizedBox(
-                height: 200,
-                child: Center(
-                  child: CustomButton(),
-                ))
+            SizedBox(
+              height: 200,
+              child: Center(
+                child: CustomButton(
+                  onTap: () {
+                    BlocProvider.of<AdviceBloc>(context)
+                        .add(AdviceRequestedEvent());
+                  },
+                  btnName: 'Get Advice',
+                ),
+              ),
+            ),
           ],
         ),
       ),
