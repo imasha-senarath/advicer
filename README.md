@@ -1,16 +1,20 @@
-# advicer
+# Advicer
+A simple Flutter Android application to get random advice with one tap. This project Built to learn Flutter Clean Architecture and BLoC Pattern.
 
-A new Flutter project.
+## ⚙️ Technologies
+* Flutter Clean Architecture and BLoC Pattern.
+* HTTP GET request.
 
-## Getting Started
+## 🔥 Features
+* Retrieve random advice with a single tap.
+* Support light & dark mode.
+  
+## 📸 Screenshots
+<img src="ss/01.png" width="400"/> <img src="ss/02.png" width="400"/>
 
-This project is a starting point for a Flutter application.
+<img src="ss/03.png" width="400"/> <img src="ss/04.png" width="400"/>
 
-A few resources to get you started if this is your first Flutter project:
+<img src="ss/05.png" width="400"/> <img src="ss/06.png" width="400"/>
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 👽 Author
+[**Imasha Senarath**](https://www.imashasenarath.com/)
