@@ -2,11 +2,11 @@
 A simple Flutter Android application to get random advice with one tap. This project Built to learn Flutter Clean Architecture and BLoC Pattern.
 
 ## ⚙️ Technologies
-* Flutter Clean Architecture and BLoC Pattern.
+* Flutter Clean Architecture and BLoC Pattern. </br>
 * HTTP GET request.
 
 ## 🔥 Features
-* Retrieve random advice with a single tap.
+* Retrieve random advice with a single tap. </br>
 * Support light & dark mode.
   
 ## 📸 Screenshots
